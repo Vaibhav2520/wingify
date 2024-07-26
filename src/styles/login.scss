@@ -1,0 +1,148 @@
+.background {
+    width: 100%;
+    @media (max-width:760px){
+        display: none;
+    }
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    .main-container {
+        display: flex;
+        height: 644px;
+        width: 800px;
+        box-shadow: 1px 2px 20px 0px;
+        position: absolute;
+        z-index: 2;
+        margin-top: -300px;
+        background-color: white;
+
+        @media (max-width:760px){
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            margin-top: 0;
+            box-shadow: none;
+        }
+
+        @media (max-width:480px){
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            margin-top: 0;
+            box-shadow: none;
+        }
+        
+        .left-container {
+            background-image: url("../images/image\ 1.png");
+            color: white;
+            flex: 1;
+            .main-content {
+                height: fit-content;
+                padding: 30px;
+                text-align: left;
+                line-height: 2;
+            }
+        }
+        .right-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            .form-wrapper {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                padding: 40px;
+                .email {
+                    .input {
+                        width: 300px;
+                        height: 45px;
+                        padding: 10px;
+                        font-size: 18px;
+                        box-sizing: border-box;
+                        margin-top: 5px;
+                    }
+                }
+                .radio {
+                    display: flex;
+                    justify-content: space-between;
+
+                    width: 200px;
+                }
+                .button {
+                    margin-top: 30px;
+                    cursor: pointer;
+                    padding: 15px 32px;
+                    background-color: #008cba;
+                    font-size: 16px;
+                    border: 1px #008cba;
+                    color: white;
+                    border-radius: 5px;
+                    width: 200px;
+                }
+                .dob-container {
+                    display: flex;
+                    justify-content: space-between;
+                    .dob-date {
+                        display: flex;
+                        flex-direction: column;
+                        .date-input {
+                            height: 45px;
+                            width: 60px;
+                            font-size: 18px;
+                            padding: 10px;
+                            box-sizing: border-box;
+                        }
+                        .date {
+                            line-height: 2;
+                            color: rgb(140, 139, 139);
+                        }
+                    }
+                    .dob-month {
+                        display: flex;
+                        flex-direction: column;
+                        .month-input {
+                            height: 45px;
+                            width: 120px;
+                            font-size: 18px;
+                            padding: 10px;
+                            box-sizing: border-box;
+                        }
+                        .month {
+                            line-height: 2;
+                            color: rgb(140, 139, 139);
+                        }
+                    }
+                    .dob-year {
+                        display: flex;
+                        flex-direction: column;
+                        .year-input {
+                            height: 45px;
+                            width: 100px;
+                            font-size: 18px;
+                            padding: 10px;
+                            box-sizing: border-box;
+                        }
+                        .year {
+                            line-height: 2;
+                            color: rgb(140, 139, 139);
+                        }
+                    }
+                }
+            }
+            .image-wrapper{
+
+                .background-bottom{
+                    width: 100%;
+                   
+                    @media (min-width:760px){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
